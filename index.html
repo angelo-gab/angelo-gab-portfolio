@@ -10,7 +10,10 @@
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="style.css" />
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="./assets/favicon_new.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon_angelogab.png" type="image/x-icon">
+
+
+
     <title>Angelo Gab Portfolio</title>
 </head>
 <body>
@@ -123,7 +126,7 @@
                     </div>-->
                 </div>
             </div>
-            <div class="col">
+            <div class="col col-mobile-skills">
                 <div class="skills-box">
                     <div class="skills-header">
                         <h3>🦾Frontend</h3>
@@ -213,11 +216,8 @@
             </div>
             
             <div class="project-btn-con">
-            <button
-            class="btn project-btn"
-            onclick="window.open('https://www.abenson.com')"
-          >
-            See Live Demo
+                <button class="btn project-btn" onclick="window.location.href='projects.html'">
+            Go to my projects
           </button></div>
 
           </div>
@@ -261,7 +261,8 @@
              <div class="col">
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: angelogabmoreno@gmail.com</p>
+                    <p class="contact-email-desktop"><i class="uil uil-envelope"></i> Email: angelogabmoreno@gmail.com</p>
+                    <p class="contact-email-mobile"><i class="uil uil-envelope"></i> Email: angelogabmoreno<br>@gmail.com</p>
                     <p><i class="uil uil-phone"></i> +63998 453 2443</p>
                 </div>
              </div>
@@ -287,6 +288,7 @@
     </main>
     <!-- --------------- FOOTER --------------- -->
     <footer>
+    
         <div class="top-footer">
             <p>Angelo Gab</p>
         </div>
@@ -325,10 +327,11 @@
                 </div>
                 </button>
                 </div> 
-        
-        <div class="bottom-footer">
-            <p>Copyright &copy; 2025 <a href="#home" style="text-decoration: none; color:#007EBB;">Angelo Gab</a>. All rights reserved.</p>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; 2025 <a href="#home" style="text-decoration: none; color:#007EBB;">Angelo Gab</a>. All rights reserved.</p>
+               </div>
         </div>
+       
     </footer>
     </div>
     <!-- ----- TYPING JS Link ----- -->
@@ -337,6 +340,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- ----- MAIN JS ----- -->
     <script src="script.js"></script>
+
 
 </body>
 </html>

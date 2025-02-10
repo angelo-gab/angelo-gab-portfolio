@@ -1,13 +1,21 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
-function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
 
-    if(menuBtn.className === "nav-menu"){
-      menuBtn.className += " responsive";
-    } else {
-      menuBtn.className = "nav-menu";
-    }
+function myMenuFunction() {
+  var menuBtn = document.getElementById("myNavMenu");
+  if (menuBtn.classList.contains("responsive")) {
+      menuBtn.classList.remove("responsive");
+  } else {
+      menuBtn.classList.add("responsive");
   }
+}
+
+// Close menu when clicking a menu link (for mobile)
+document.querySelectorAll(".nav_menu_list .nav-link").forEach(item => {
+  item.addEventListener("click", () => {
+      document.getElementById("myNavMenu").classList.remove("responsive");
+  });
+});
+
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
   window.onscroll = function() {headerShadow()};
@@ -118,4 +126,6 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
 
