@@ -41,7 +41,7 @@ document.querySelectorAll(".nav_menu_list .nav-link").forEach(item => {
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["UI Frontend Developer","UI Engineer","UX/UI Designer"],
+    strings : ["UX/UI Front-End Developer","UI Engineer","UX/UI Designer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
